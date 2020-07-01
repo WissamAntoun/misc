@@ -10,7 +10,7 @@ $action = { $path = $Event.SourceEventArgs.FullPath
             $changeType = $Event.SourceEventArgs.ChangeType
             $logline = "$(Get-Date), $changeType, $path"
             Add-content "D:\pdf_log.txt" -value $logline
-            C:\Users\WISSAM-PC\.conda\envs\thesis\python.exe C:\repos\misc\rename_pdf_files_from_content_title_or_arxiv.py
+            C:\Users\WISSAM-PC\.conda\envs\thesis\python.exe C:\repos\misc\pdf_renamer\rename_pdf_files_from_content_title_or_arxiv.py
           }    
 ### DECIDE WHICH EVENTS SHOULD BE WATCHED 
 Register-ObjectEvent $watcher "Created" -Action $action
