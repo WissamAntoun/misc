@@ -22,7 +22,7 @@ def get_valid_filename(s):
     Copyright (c) Django Software Foundation and individual contributors.
     All rights reserved.
     """
-    return re.sub(r'(?u)[^-\w.]', '', s)
+    return re.sub(r'(?u)[^-\w. ]', '', s)
 
 #%%
 all_files_names = glob.glob("C:\\Users\\WISSAM-PC\\Downloads\\Documents\\*.pdf")
