@@ -1,7 +1,7 @@
 ### SET FOLDER TO WATCH + FILES TO WATCH + SUBFOLDERS YES/NO
 $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.Path = "C:\Users\WISSAM-PC\Downloads\Documents\"
-$watcher.Filter = "*.*"
+$watcher.Filter = "*.pdf"
 $watcher.IncludeSubdirectories = $true
 $watcher.EnableRaisingEvents = $true  
 
